@@ -14,7 +14,15 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(backgroundColor: Colors.green, body: DiceArea()),
+      home: Scaffold(
+        backgroundColor: Colors.green,
+        appBar: AppBar(
+          backgroundColor: Colors.green,
+          title: Text('Random Dice'),
+          centerTitle: true,
+        ),
+        body: DiceArea(),
+      ),
     );
   }
 }
